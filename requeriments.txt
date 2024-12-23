@@ -1,0 +1,16 @@
+# Requisitos do Projeto
+
+# Pacotes Necessários
+Flask==2.2.2
+Jinja2==3.1.2
+
+# Animações e Gráficos
+matplotlib==3.6.2
+pygame==2.1.0
+
+# Desenvolvimento e Testes
+pytest==7.2.0
+black==22.10.0
+
+# Gerenciamento de Requisições e APIs
+requests==2.28.1

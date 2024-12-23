@@ -1,0 +1,118 @@
+<style>
+    body {
+      font-family: Arial, sans-serif; /* Define a fonte */
+      background-color: #282c34; /* Fundo escuro */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      color: white; /* Cor do texto */
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center; 
+      color: #ff6fa9; /* Cor rosa*/
+    }
+
+    .arvore {
+      position: relative; /* Posição para colocar elementos dentro */
+      width: 0;
+      height: 0;
+      margin-bottom: 20px;
+    }
+
+    /* Criando os triângulos */
+    .arvore .triangulo {
+      top: 60px;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent; /* Lado esquerdo transparente */
+      border-right: 50px solid transparent; /* Lado direito transparente */
+      border-bottom: 80px solid #4caf50; /* Base verde */
+      position: absolute;
+      left: -50px;
+    }
+
+    .arvore .triangulo:nth-child(2) {
+      top: 100px;
+      border-left-width: 70px;
+      border-right-width: 70px;
+      border-bottom-width: 100px;
+      left: -70px;
+    }
+
+    .arvore .triangulo:nth-child(3) {
+      top: 140px;
+      border-left-width: 90px;
+      border-right-width: 90px;
+      border-bottom-width: 120px;
+      left: -90px;
+    }
+
+    /* Tronco da árvore */
+    .arvore .tronco {
+      width: 40px;
+      height: 40px;
+      background: #8b4513; /* Marrom */
+      position: absolute;
+      top: 260px;
+      left: -20px;
+      border-radius: 5px;
+    }
+
+    /* Estrela brilhante */
+    .arvore .estrela {
+      position: absolute;
+      top: 20px;
+      left: -27px;
+      font-size: 40px;
+      color: gold;
+      animation: piscar 1.5s infinite alternate;
+    }
+
+    /* Animação da estrela e bolinhas */
+    @keyframes piscar {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0.5;
+      }
+    }
+
+    /* Bolinhas decorativas */
+    .arvore .bola {
+      width: 10px;
+      height: 10px;
+      background: #ff6fa9;
+      position: absolute;
+      border-radius: 50%; /* Forma redonda */
+      animation: piscar 2s infinite;
+    }
+
+    .arvore .bola:nth-child(6) { top: 140px; left: -60px; }
+    .arvore .bola:nth-child(7) { top: 140px; left: 50px; }
+    .arvore .bola:nth-child(8) { top: 200px; left: -80px; }
+    .arvore .bola:nth-child(9) { top: 200px; left: 70px; }
+    .arvore .bola:nth-child(10) { top: 255px; left: -95px; }
+    .arvore .bola:nth-child(11) { top: 255px; left: 88px; }
+    
+    footer {
+      margin-top: 320px;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ff6fa9;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
